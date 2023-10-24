@@ -1,0 +1,134 @@
+.container {
+  display: flex;
+  width: 620px;
+  border-radius: 25px;
+  box-shadow: 4px 4px 4px rgb(85, 82, 82);
+  margin: 5% 0 5% 25%;
+}
+
+h4.yourresult,
+p.ofhundred,
+p.youscoredhigher {
+  color: rgb(218, 201, 252);
+}
+
+h2.seventysix {
+  color: white;
+  font-size: 40px;
+  margin-bottom: -20px;
+}
+
+h2.great {
+  color: white;
+}
+
+.result {
+  background: linear-gradient(2deg, #3c09c9, #8055d8);
+  border-radius: 25px;
+  align-items: center;
+  text-align: center;
+  width: 300px;
+}
+
+.score {
+  background: linear-gradient(217deg, rgb(82 92 205), #9638f6);
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  display: inline-block;
+  text-align: inherit;
+}
+
+.summary {
+  display: inline-block;
+  border-radius: 25px;
+  padding-left: 15px;
+  width: 300px;
+}
+
+.reaction {
+  background: rgb(235, 180, 169);
+  color: rgb(222, 103, 83);
+  border-radius: 15px;
+  width: 85%;
+  padding: 6px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.memory {
+  background: rgb(236, 218, 177);
+  color: rgb(247, 183, 47);
+  border-radius: 15px;
+  width: 85%;
+  padding: 6px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.verbal {
+  background: rgb(228, 238, 225);
+  color: rgb(44, 122, 22);
+  border-radius: 15px;
+  width: 85%;
+  padding: 6px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.visual {
+  background: rgb(160, 165, 222);
+  color: rgb(8, 28, 242);
+  border-radius: 15px;
+  width: 85%;
+  padding: 6px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.continue {
+  background: rgb(2, 4, 31);
+  color: rgb(235, 235, 237);
+  border-radius: 15px;
+  width: 85%;
+  padding: 6px;
+  text-align: center;
+}
+
+.grade {
+  color: rgb(111, 107, 107);
+  margin-left: auto;
+}
+
+img {
+  margin-right: 5px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: auto;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Media query for tablet screens */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    /* Stack .result and .summary vertically on mobile */
+    width: auto;
+    /* Allow the container to adjust its width as needed */
+    box-shadow: none;
+    outline:2px solid beige;
+    margin: auto;
+  }
+
+  .result,
+  .summary {
+    width: 100%;
+    /* Make .result and .summary full width on mobile */
+  }
+}
